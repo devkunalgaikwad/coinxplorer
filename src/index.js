@@ -5,6 +5,7 @@ import {ChakraProvider, theme} from '@chakra-ui/react';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+document.title = 'CoinXplorer'
 
 root.render(
   <React.StrictMode>

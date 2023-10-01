@@ -61,7 +61,7 @@ const Header = () => {
           </Button>
         </Box>
         <Box minW={'9vw'} display={'flex'} alignContent={'center'} justifyContent={'space-between'}>
-          <Text className='flex text-center'>Server Status :<span className='font-semibold'>{ping}</span></Text>
+          <Text className='flex text-center items-center'>Server Status :<span className='font-semibold'>{ping}</span></Text>
           <Button onClick={toggleColorMode} borderRadius={'full'} m={'0 10px'} >
             Change to {colorMode === 'light' ? <MdDarkMode/>: <MdLightMode/>}
           </Button>
