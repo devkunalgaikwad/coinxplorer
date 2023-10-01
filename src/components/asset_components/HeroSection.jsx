@@ -2,11 +2,11 @@ import { Button} from '@chakra-ui/react'
 
 const HeroSection = () => {
   return (
-    <div className='flex bg-inherit max-w-[1440px] h-[90vh] items-center  mx-auto'>
-        <div className='flex justify-between flex-row w-full mx-24'>
+    <div className='flex bg-inherit max-w-[1440px] h-[90vh] items-center px-auto'>
+        <div className='flex justify-between flex-row w-full md:mx-24 mx-10 my-auto'>
             <div className='flex flex-col min-w-[40vw] justify-center items-start'>
-                <p className='text-xl'>Unlocking the Potential of <span className='text-[#FFA500] font-bold'>Digital Currency</span></p>
-                <h1 className='flex text-7xl flex-col '>Let's Unlock the<br/>Power of <span className='text-[#FFA500] font-bold'>Your Crypto</span></h1>
+                <p className='md:text-xl text-sm'>Unlocking the Potential of <br className='flex md:hidden'/> <span className='text-[#FFA500] font-bold'>Digital Currency</span></p>
+                <h1 className='flex md:text-7xl text-4xl flex-col '>Let's Unlock the<br/>Power of <span className='text-[#FFA500] font-bold'>Your Crypto</span></h1>
                 <Button color={'white'} bg={'orange'} w={40} className='my-5'>
                     Bitcoin
                 </Button>
@@ -28,7 +28,7 @@ const HeroSection = () => {
                     </div>
                 </div>
             </div>
-            <div className='relative w-auto flex'>
+            <div className='relative hidden  w-auto md:flex'>
                 <img src="./laptop_logo.png" alt="Logo"width={1060} className='min-w-[170%]' />
             </div>
         </div>

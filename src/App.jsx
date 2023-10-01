@@ -8,6 +8,8 @@ import Exchanges from './components/pages/Exchanges'
 import CoinsDetails from './components/pages/CoinsDetails'
 import '../src/index.css'
 import { Divider } from '@chakra-ui/react'
+import FooterNav from './components/asset_components/FooterNav'
+import News from './components/pages/News'
 
 const App = () => {
   return (
@@ -20,7 +22,9 @@ const App = () => {
           <Route path='/coins' element={<Coins/>}/>
           <Route path='/exchanges' element={<Exchanges/>}/>
           <Route path='/coin/:id' element={<CoinsDetails/>}/>
+          <Route path='/news'element={<News/>}/>
         </Routes>
+        <FooterNav/>
         <Footer/>
       </Router>
     </>

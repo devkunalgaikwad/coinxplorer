@@ -17,20 +17,28 @@ export default function LargeWithLogoLeft() {
     <Box
       bg={useColorModeValue('gray.50', 'gray.900')}
       color={useColorModeValue('gray.700', 'gray.200')}>
-      <Container as={Stack} maxW={'6xl'} py={10} className='text-neutral-500'>
-        <SimpleGrid
-          templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 1fr 1fr' }}
-          spacing={8}>
-          <Stack spacing={6}>
+      <Container as={Stack} maxW={'6xl'} py={10}pb={20} className='text-neutral-500'>
+          <Stack hideFrom={'md'} spacing={6}>
             <Box>
-              <Heading className='text-neutral-900'>
+              <Heading as={'h1'} className='font-bold' >
                 CoinXplorer
               </Heading>
             </Box>
             <Text fontSize={'sm'}>© 2023 CoinXplorer. All rights reserved</Text>
           </Stack>
-          <Stack align={'flex-start'}>
-            <Text className='font-semibold text-lg text-neutral-900' >Product</Text>
+        <SimpleGrid hideBelow={'md'}
+          templateColumns={{ sm: '1fr 1fr', md: '2fr 1fr 1fr 1fr 1fr' }}
+          spacing={8}>
+          <Stack spacing={6}>
+            <Box>
+              <Heading as={'h1'} className='font-bold' >
+                CoinXplorer
+              </Heading>
+            </Box>
+            <Text fontSize={'sm'}>© 2023 CoinXplorer. All rights reserved</Text>
+          </Stack>
+          <Stack  align={'flex-start'} >
+            <Text className='font-semibold text-lg underline ' >Product</Text>
             <Box as="a" href={'#'}>
               Overview
             </Box>
@@ -48,7 +56,7 @@ export default function LargeWithLogoLeft() {
             </Box>
           </Stack>
           <Stack align={'flex-start'}>
-            <Text className='font-semibold text-lg text-neutral-900'>Company</Text>
+            <Text className='font-semibold text-lg underline'>Company</Text>
             <Box as="a" href={'#'}>
               About
             </Box>
@@ -66,7 +74,7 @@ export default function LargeWithLogoLeft() {
             </Box>
           </Stack>
           <Stack align={'flex-start'}>
-            <Text className='font-semibold text-lg text-neutral-900'>Support</Text>
+            <Text className='font-semibold text-lg underline'>Support</Text>
             <Box as="a" href={'#'}>
               Help Center
             </Box>
@@ -84,7 +92,7 @@ export default function LargeWithLogoLeft() {
             </Box>
           </Stack>
           <Stack align={'flex-start'}>
-            <Text className='font-semibold text-lg text-neutral-900'>Follow Us</Text>
+            <Text className='font-semibold text-lg underline'>Follow Us</Text>
             <Box as="a" href={'#'}>
               Facebook
             </Box>

@@ -48,8 +48,8 @@ const Header = () => {
   return (
     <>
       <Box display={'flex'} alignContent={'center'} justifyContent={'space-between'} p={'10px'} >
-        <Heading ml={'10px'}>CoinXplorer</Heading>
-        <Box minW={'20vw'} display={'flex'} justifyContent={'space-between'}>
+        <Heading ml={'10px'} >CoinXplorer</Heading>
+        <Box minW={'20vw'} display={'flex'} justifyContent={'space-between'} hideBelow={'md'}>
           <Button variant={'unstyled'} >
               <Link to='/'>Home</Link>
           </Button>
@@ -59,11 +59,14 @@ const Header = () => {
           <Button variant={'unstyled'} >
               <Link to='/coins'>Coins</Link>
           </Button>
+          <Button variant={'unstyled'} >
+              <Link to='/news'>News</Link>
+          </Button>
         </Box>
         <Box minW={'9vw'} display={'flex'} alignContent={'center'} justifyContent={'space-between'}>
-          <Text className='flex text-center items-center'>Server Status :<span className='font-semibold'>{ping}</span></Text>
+          <Text hideBelow={'md'} className='flex text-center items-center'>Server Status :<span className='font-semibold'>{ping}</span></Text>
           <Button onClick={toggleColorMode} borderRadius={'full'} m={'0 10px'} >
-            Change to {colorMode === 'light' ? <MdDarkMode/>: <MdLightMode/>}
+            {colorMode === 'light' ? <MdDarkMode/>: <MdLightMode/>}
           </Button>
           <Button borderRadius={'full'} onClick={onOpen}>
             <MdSearch/>
